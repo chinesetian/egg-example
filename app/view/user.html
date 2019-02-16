@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <!-- 使用模板数据 -->
+    <div class="root">
+        <h3>用户信息</h3> 
+        <table>
+            <tr>
+                <th>id</th>
+                <th>姓名</th>
+                <th>用户名</th>
+                <th>组织id</th>
+            </tr>
+            {% for item in list %}
+            <tr>
+                <td>{{item.id}}</td>
+                <td>{{item.real_name}}</td>
+                <td>{{item.login_name}}</td>
+                <td>{{item.organization_id}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
